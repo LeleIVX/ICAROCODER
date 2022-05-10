@@ -33,20 +33,18 @@ body {
   background-size: cover;
 }
 
-a:hover {
-  color: rgba(155, 0, 0, 0.717);
+.footer {
+  position: absolute;
+  transform: translate(0, 80px);
 }
-
-a {
+.footer a {
   color: white;
   text-decoration: solid;
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 25px;
 }
-
-.footer {
-  position: absolute;
-  transform: translate(0, 80px);
+.footer a:hover {
+  color: rgba(155, 0, 0, 0.717);
 }
 
 .subtitulo {

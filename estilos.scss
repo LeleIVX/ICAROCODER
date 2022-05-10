@@ -5,6 +5,8 @@
     padding: 0;
 }
 
+$text:'Pathway Gothic One', sans-serif;
+
 .dropdown{
     background-color: rgba(0, 0, 0, 0.863);
 border-radius: 10%;
@@ -25,27 +27,27 @@ border-radius: 10%;
 }
 body{
     background-color: #000000;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%230e0317' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%231c062e' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23290945' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23370c5c' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23450F73' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
-}
-a:hover{
-    color: rgba(155, 0, 0, 0.717);
-}
-a{
-    color: white;
-    text-decoration: solid;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%230e0317' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%231c062e' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23290945' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23370c5c' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23450F73' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 .footer{
     position: absolute;
     transform: translate(0,80px);
+        a{
+            color: white;
+            text-decoration: solid;
+            font-family: $text;
+            font-size: 25px;
+                &:hover{
+                    color: rgba(155, 0, 0, 0.717);
+                }
+        }
 }
 .subtitulo{
     font-size: 14px;
         font-weight: bold;
-        font-family: 'Pathway Gothic One', sans-serif;
+        font-family: $text;
         color: rgb(255, 255, 255);
         line-height: 30px;
         transform: translate(0,20px);
@@ -54,7 +56,7 @@ a{
 .compromiso{
     font-size: 24px;
         font-weight: bold;
-        font-family: 'Pathway Gothic One', sans-serif;
+        font-family: $text;
         color: rgb(255, 255, 255);
         line-height: 40px; 
     transform: translate(0,80px); 
@@ -82,7 +84,7 @@ label{
     transform: translate(0,20px);
     margin-left: 30px;
     font-size: 24px;
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: $text;
     color: rgb(255, 255, 255);
 }
 .imgrow{
