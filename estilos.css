@@ -11,19 +11,25 @@
 }
 
 .titulo {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 50px;
   color: white;
   text-align: center;
-  animation-name: bienvenida;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-delay: 2.5s;
+  -webkit-animation-name: bienvenida;
+          animation-name: bienvenida;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .rayo {
-  animation-name: rayo;
-  animation-duration: 5s;
+  -webkit-animation-name: rayo;
+          animation-name: rayo;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 body {
@@ -35,14 +41,18 @@ body {
 
 .footer {
   position: absolute;
-  transform: translate(0, 80px);
+  -webkit-transform: translate(0, 80px);
+          transform: translate(0, 80px);
 }
+
 .footer a {
   color: white;
-  text-decoration: solid;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 25px;
 }
+
 .footer a:hover {
   color: rgba(155, 0, 0, 0.717);
 }
@@ -51,9 +61,10 @@ body {
   font-size: 14px;
   font-weight: bold;
   font-family: "Pathway Gothic One", sans-serif;
-  color: rgb(255, 255, 255);
+  color: white;
   line-height: 30px;
-  transform: translate(0, 20px);
+  -webkit-transform: translate(0, 20px);
+          transform: translate(0, 20px);
   margin: 0;
 }
 
@@ -61,14 +72,16 @@ body {
   font-size: 24px;
   font-weight: bold;
   font-family: "Pathway Gothic One", sans-serif;
-  color: rgb(255, 255, 255);
+  color: white;
   line-height: 40px;
-  transform: translate(0, 80px);
+  -webkit-transform: translate(0, 80px);
+          transform: translate(0, 80px);
 }
 
 form {
   color: white;
-  transform: translate(0, 50px);
+  -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
   margin: 10px;
 }
 
@@ -77,37 +90,63 @@ label {
 }
 
 .formulariobtn {
-  background-color: rgb(128, 18, 128);
+  background-color: #801280;
 }
 
 .imgcon {
-  align-self: center;
-  transform: translate(50px, 0);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: translate(50px, 0);
+          transform: translate(50px, 0);
 }
 
 .mapa {
-  transform: translate(0, 30px);
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
   margin-left: 30px;
 }
 
 .textllegar {
-  transform: translate(0, 20px);
+  -webkit-transform: translate(0, 20px);
+          transform: translate(0, 20px);
   margin-left: 30px;
   font-size: 24px;
   font-family: "Pathway Gothic One", sans-serif;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .imgrow {
-  transform: translate(0, 20px);
+  -webkit-transform: translate(0, 20px);
+          transform: translate(0, 20px);
   max-height: 400px;
   margin: 5px;
 }
 
 .galeria:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 2s;
   transition: 2s;
   z-index: 1;
+}
+
+@-webkit-keyframes rayo {
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes rayo {
@@ -127,6 +166,73 @@ label {
     opacity: 0;
   }
 }
+
+@-webkit-keyframes bienvenida {
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+    color: white;
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    color: black;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+    color: white;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+    color: black;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+    color: white;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+    color: black;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    color: white;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+    color: black;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+    color: white;
+  }
+}
+
 @keyframes bienvenida {
   10% {
     opacity: 0;
@@ -192,23 +298,26 @@ label {
     color: white;
   }
 }
+
 @media only screen and (max-width: 776px) {
   .imgcon {
     opacity: 0;
   }
-
   .mapa {
     height: 200px;
     width: 1vh;
   }
-
   .footer {
-    transform: translate(0, 300px);
+    -webkit-transform: translate(0, 300px);
+            transform: translate(0, 300px);
   }
-
   .imgnos {
     opacity: 0;
   }
 }
 
+.imgnos {
+  height: 400px;
+  width: 200px;
+}
 /*# sourceMappingURL=estilos.css.map */
