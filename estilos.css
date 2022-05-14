@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+.centrar, .imgnos, .tattoo1, .tattoo2, .tattoo3, .tattoo4, .tattoo5 {
+  background-position: center;
+  background-size: cover;
+}
+
 .dropdown {
   background-color: rgba(0, 0, 0, 0.863);
   border-radius: 10%;
@@ -119,8 +124,6 @@ label {
 .imgrow {
   -webkit-transform: translate(0, 20px);
           transform: translate(0, 20px);
-  max-height: 400px;
-  margin: 5px;
 }
 
 .galeria:hover {
@@ -129,6 +132,37 @@ label {
   -webkit-transition: 2s;
   transition: 2s;
   z-index: 1;
+}
+
+.imgnos {
+  background-image: url(./img/persona2.jpg);
+  height: 400px;
+  width: 200px;
+}
+
+.tattoo1 {
+  background-image: url("/img/tattoo1.jpg");
+  padding: 150px;
+}
+
+.tattoo2 {
+  background-image: url("/img/tattoo2.jpg");
+  padding: 150px;
+}
+
+.tattoo3 {
+  background-image: url("/img/tattoo3.jpg");
+  padding: 150px;
+}
+
+.tattoo4 {
+  background-image: url("/img/tattoo4.jpg");
+  padding: 150px;
+}
+
+.tattoo5 {
+  background-image: url("/img/tattoo5.jpg");
+  padding: 150px;
 }
 
 @-webkit-keyframes rayo {
@@ -313,11 +347,162 @@ label {
   }
   .imgnos {
     opacity: 0;
+    height: 0px;
+  }
+  .rownos {
+    height: 300px;
   }
 }
 
-.imgnos {
-  height: 400px;
-  width: 200px;
+@media only screen and (max-width: 405px) {
+  .footer a {
+    font-size: 18px;
+  }
+  .compromiso {
+    line-height: 24px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1209px) {
+  .tattoo1 {
+    padding: 130px;
+    height: 300px;
+    width: 100px;
+  }
+  .tattoo2 {
+    padding: 130px;
+    height: 300px;
+    width: 150px;
+  }
+  .tattoo3 {
+    padding: 130px;
+    height: 300px;
+    width: 100px;
+  }
+  .tattoo4 {
+    padding: 130px;
+    height: 300px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 1049px) {
+  .tattoo1 {
+    padding: 100px;
+    height: 300px;
+    width: 100px;
+  }
+  .tattoo2 {
+    padding: 100px;
+    height: 300px;
+    width: 50px;
+  }
+  .tattoo3 {
+    padding: 100px;
+    height: 300px;
+    width: 100px;
+  }
+  .tattoo4 {
+    padding: 100px;
+    height: 300px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .tattoo1 {
+    padding: 80px;
+    height: 300px;
+    width: 100px;
+  }
+  .tattoo2 {
+    padding: 80px;
+    height: 300px;
+    width: 50px;
+  }
+  .tattoo3 {
+    padding: 80px;
+    height: 300px;
+    width: 100px;
+  }
+  .tattoo4 {
+    padding: 80px;
+    height: 300px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .tattoo1 {
+    padding: 70px;
+    height: 250px;
+    width: 80px;
+  }
+  .tattoo2 {
+    padding: 70px;
+    height: 250px;
+    width: 80px;
+  }
+  .tattoo3 {
+    padding: 70px;
+    height: 250px;
+    width: 80px;
+  }
+  .tattoo4 {
+    padding: 80px;
+    height: 250px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .tattoo1 {
+    padding: 100px;
+    height: 300px;
+    width: 100px;
+  }
+  .tattoo2 {
+    padding: 150px;
+    height: 250px;
+    width: 300px;
+  }
+  .tattoo3 {
+    padding: 100px;
+    height: 360px;
+    width: 80px;
+  }
+  .tattoo4 {
+    padding: 180px;
+    height: 250px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .tattoo1 {
+    padding: 100px;
+    height: 300px;
+    width: 100px;
+  }
+  .tattoo2 {
+    padding: 150px;
+    height: 250px;
+    width: 300px;
+  }
+  .tattoo3 {
+    padding: 100px;
+    height: 360px;
+    width: 80px;
+  }
+  .tattoo4 {
+    padding: 180px;
+    height: 250px;
+    width: 500px;
+  }
+  .galeria {
+    -webkit-transform: translate(40px, 0);
+            transform: translate(40px, 0);
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

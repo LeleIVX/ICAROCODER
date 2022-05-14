@@ -4,9 +4,11 @@
     margin: 0;
     padding: 0;
 }
-
 $text:'Pathway Gothic One', sans-serif;
-
+.centrar{
+    background-position: center;
+    background-size: cover;
+}
 .dropdown{
     background-color: rgba(0, 0, 0, 0.863);
 border-radius: 10%;
@@ -89,13 +91,30 @@ label{
 }
 .imgrow{
     transform: translate(0,20px);
-    max-height: 400px;
-    margin: 5px;
 }
 .galeria:hover{
     transform: scale(1.1);
     transition: 2s;
     z-index: 1;
+}
+.imgnos{
+    background-image: url(./img/persona2.jpg);
+    @extend .centrar;
+    height: 400px;
+    width: 200px;
+}
+$tattoo: (tattoo1,tattoo2,tattoo3,tattoo4,tattoo5);
+@each $i in $tattoo{
+    .#{$i}{
+        background-image: url("/img/#{$i}.jpg");
+        padding: 150px;
+        @extend .centrar
+    }
+}
+@mixin medidas ($padding, $height, $width) {
+    padding: $padding;
+    height: $height;
+    width: $width;
 }
 @keyframes rayo{
     10%{
@@ -193,9 +212,87 @@ label{
     }
     .imgnos{
         opacity: 0;
+        height: 0px;
+    }
+    .rownos{
+        height: 300px;
     }
 }
-.imgnos{
-    height: 400px;
-    width: 200px;
+@media only screen and (max-width:405px){
+    .footer{
+        a{
+            font-size: 18px;
+        }
+    }
+    .compromiso{
+        line-height: 24px;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:1209px){
+    .tattoo1{
+        @include medidas(130px,300px ,100px )
+    }
+    .tattoo2{
+        @include medidas(130px,300px,150px)
+    }
+    .tattoo3{
+        @include medidas(130px,300px ,100px )
+    }
+    .tattoo4{
+        @include medidas(130px,300px ,100px )
+    }
+}
+@media only screen and (max-width:1049px){
+    .tattoo1{
+        @include medidas(100px,300px,100px )}
+    .tattoo2{
+        @include medidas(100px,300px,50px )}
+    .tattoo3{
+        @include medidas(100px,300px,100px )}
+    .tattoo4{
+        @include medidas(100px,300px,100px )}         
+}
+@media only screen and (max-width:810px){
+    .tattoo1{
+        @include medidas(80px,300px,100px )}
+    .tattoo2{
+        @include medidas(80px,300px,50px )}
+    .tattoo3{
+        @include medidas(80px,300px,100px )}
+    .tattoo4{
+        @include medidas(80px,300px,100px )}           
+}
+@media only screen and (max-width:649px){
+    .tattoo1{
+        @include medidas(70px,250px,80px )}
+    .tattoo2{
+        @include medidas(70px,250px,80px )}
+    .tattoo3{
+        @include medidas(70px,250px,80px )}
+    .tattoo4{
+        @include medidas(80px,250px,100px )}  
+}
+@media only screen and (max-width:576px){
+    .tattoo1{
+        @include medidas(100px,300px,100px )}
+    .tattoo2{
+        @include medidas(150px,250px,300px )}
+    .tattoo3{
+        @include medidas(100px,360px,80px )}
+    .tattoo4{
+        @include medidas(180px,250px,200px )}
+}
+@media only screen and (max-width:528px){
+    .tattoo1{
+        @include medidas(100px,300px,100px )}
+    .tattoo2{
+        @include medidas(150px,250px,300px )}
+    .tattoo3{
+        @include medidas(100px,360px,80px )}
+    .tattoo4{
+        @include medidas(180px,250px,500px )}
+    .galeria{
+        transform: translate(40px,0);
+    }
 }
