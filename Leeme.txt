@@ -1,0 +1,3 @@
+Agregué las etiquetas meta de keywords y description a todas las páginas del proyecto. 
+Comprimí las imágenes para que las mismas pesaran menos y optimice la carga y navegación del sitio.
+Se eliminan lineas de codigo en blanco (usadas como separadores).
