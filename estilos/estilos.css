@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.centrar, .imgnos, .tattoo1, .tattoo2, .tattoo3, .tattoo4, .tattoo5 {
+.centrar, .imgnos, .tattoo1, .tattoo2, .tattoo3, .tattoo4, .tattoo5, .tattoo6, .tattoo7 {
   background-position: center;
   background-size: cover;
 }
@@ -124,6 +124,9 @@ label {
 .imgrow {
   -webkit-transform: translate(0, 20px);
           transform: translate(0, 20px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .galeria:hover {
@@ -162,6 +165,16 @@ label {
 
 .tattoo5 {
   background-image: url("/img/tattoo5.jpg");
+  padding: 150px;
+}
+
+.tattoo6 {
+  background-image: url("/img/tattoo6.jpg");
+  padding: 150px;
+}
+
+.tattoo7 {
+  background-image: url("/img/tattoo7.jpg");
   padding: 150px;
 }
 
@@ -504,5 +517,38 @@ label {
     -webkit-transform: translate(40px, 0);
             transform: translate(40px, 0);
   }
+}
+
+.tattoo5 {
+  padding: 200px;
+  height: 200px;
+  width: 200px;
+}
+
+.tattoo6 {
+  padding: 200px;
+  height: 200px;
+  width: 200px;
+}
+
+.tattoo7 {
+  padding: 200px;
+  height: 200px;
+  width: 200px;
+}
+
+.carousel {
+  height: 300px;
+  width: 80%;
+}
+
+.separador {
+  height: 50px;
+}
+
+.titprom {
+  color: #e3e30d;
+  font-size: 30px;
+  text-shadow: 5px 0px 0px rgba(0, 0, 0, 0.596);
 }
 /*# sourceMappingURL=estilos.css.map */

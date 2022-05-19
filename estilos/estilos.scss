@@ -91,6 +91,7 @@ label{
 }
 .imgrow{
     transform: translate(0,20px);
+    justify-content: center;
 }
 .galeria:hover{
     transform: scale(1.1);
@@ -103,7 +104,7 @@ label{
     height: 400px;
     width: 200px;
 }
-$tattoo: (tattoo1,tattoo2,tattoo3,tattoo4,tattoo5);
+$tattoo: (tattoo1,tattoo2,tattoo3,tattoo4,tattoo5,tattoo6,tattoo7);
 @each $i in $tattoo{
     .#{$i}{
         background-image: url("/img/#{$i}.jpg");
@@ -294,4 +295,25 @@ $tattoo: (tattoo1,tattoo2,tattoo3,tattoo4,tattoo5);
     .galeria{
         transform: translate(40px,0);
     }
+}
+.tattoo5{
+    @include medidas(200px,200px ,200px )
+}
+.tattoo6{
+    @include medidas(200px,200px ,200px )
+}
+.tattoo7{
+    @include medidas(200px,200px ,200px )
+}
+.carousel{
+    height: 300px;
+    width: 80%;
+}
+.separador{
+    height: 50px;
+}
+.titprom{
+    color: rgb(227, 227, 13);
+    font-size: 30px;
+    text-shadow: 5px 0px 0px rgba(0, 0, 0, 0.596);
 }
