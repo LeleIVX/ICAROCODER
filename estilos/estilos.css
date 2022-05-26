@@ -79,8 +79,8 @@ body {
   font-family: "Pathway Gothic One", sans-serif;
   color: white;
   line-height: 40px;
-  -webkit-transform: translate(0, 80px);
-          transform: translate(0, 80px);
+  -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
 }
 
 form {
@@ -542,13 +542,32 @@ label {
   width: 80%;
 }
 
-.separador {
-  height: 50px;
+.card-body {
+  background-color: rgba(0, 0, 0, 0.438);
 }
 
-.titprom {
+.card {
+  padding: 0;
+  background-color: #00000075;
+}
+
+.container {
+  gap: 3;
+  padding: 10px;
+  margin: 15px;
+}
+
+.home {
+  height: auto;
+}
+
+.card-title {
   color: #e3e30d;
   font-size: 30px;
   text-shadow: 5px 0px 0px rgba(0, 0, 0, 0.596);
+}
+
+.card-text {
+  color: white;
 }
 /*# sourceMappingURL=estilos.css.map */

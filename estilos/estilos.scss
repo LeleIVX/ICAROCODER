@@ -61,7 +61,7 @@ body{
         font-family: $text;
         color: rgb(255, 255, 255);
         line-height: 40px; 
-    transform: translate(0,80px); 
+    transform: translate(0,50px); 
 }
 form{
     color: white;
@@ -309,11 +309,26 @@ $tattoo: (tattoo1,tattoo2,tattoo3,tattoo4,tattoo5,tattoo6,tattoo7);
     height: 300px;
     width: 80%;
 }
-.separador{
-    height: 50px;
+.card-body{
+    background-color: rgba(0, 0, 0, 0.438);
 }
-.titprom{
+.card{
+    padding: 0;
+    background-color: #00000075;
+}
+.container{
+    gap: 3;
+    padding: 10px;
+    margin: 15px;
+}
+.home{
+    height: auto;
+}
+.card-title{
     color: rgb(227, 227, 13);
     font-size: 30px;
     text-shadow: 5px 0px 0px rgba(0, 0, 0, 0.596);
+}
+.card-text{
+    color: white;
 }
